@@ -1,5 +1,6 @@
 import datetime
 #コメントに対して変更
+#２つ目のコメントに対して変更
 import random
 num_of_alphabet = 26  # 全アルファベット数
 num_of_all_chars = 10 # 対象文字数
