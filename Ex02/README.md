@@ -17,4 +17,4 @@
 - ブランチを切り替える前に，すべて䛾変更履歴をコミットした方がいい
 - コミット: git add ファイル名
 - 　　　　: git commit -m 名前
-- プッシュ: git push origin main
+- プッシュ: git push origin main 
