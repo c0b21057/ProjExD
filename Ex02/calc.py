@@ -13,7 +13,7 @@ def click_equal(event):
         res = eval(eqn)
         entry.delete(0, tk.END)
         entry.insert(tk.END, res)
-    except ZeroDivisionError:
+    except (ZeroDivisionError,NameError):
         entry.delete(0, tk.END)
         entry.insert(tk.END, "計算不可")
 
@@ -29,7 +29,7 @@ entry.grid(row=0, column=0, columnspan=3)
 
 r, c = 1, 0 
 numbers = list(range(9, -1, -1)) 
-operators = ["+","-","*","/","(",")"] 
+operators = ["(",")","+","-","*","/"] 
 for i, num in enumerate(numbers+operators, 1):
     btn = tk.Button(root, text=f"{num}", font=("", 30), width=4, height=1)
     btn.bind("<1>", click_number)
