@@ -31,7 +31,7 @@ def main_proc():
             mx+=1
     cx,cy=50+mx*100,50+my*100
     
-
+#ゴールについた時の二匹目の召喚
     if cx==1350 and cy==750:
         canv.delete(tori_id)
         tori=tk.PhotoImage(file=f"fig/3.png")
