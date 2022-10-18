@@ -1,7 +1,6 @@
 import tkinter as tk
 import tkinter.messagebox as tkm
 import maze_maker as mm
-import random 
 
 #キーを押したときの関数
 def key_down(event):
