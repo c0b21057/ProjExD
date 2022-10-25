@@ -34,7 +34,7 @@ def main():
     haikei_sfc=pg.image.load("fig/pg_bg.jpg")#背景
     haikei_rct=haikei_sfc.get_rect()
 
-    tori_sfc=pg.image.load("fig/hirako.png")#ひらこしんじをつくる
+    tori_sfc=pg.image.load("fig/hirako.png")#平子真子をつくる
     tori_sfc=pg.transform.rotozoom(tori_sfc,0,0.12)
     tori_rct=tori_sfc.get_rect()
     tori_rct.center=900,400
