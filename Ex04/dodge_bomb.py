@@ -27,7 +27,7 @@ def main():
     count2=0
     vx=1
     vy=1
-    pg.display.set_caption("逃げろ!ブリーチキャラ")
+    pg.display.set_caption("Run away!! Bleach Character")
     scrn_sfc=pg.display.set_mode((1600,900))
     scrn_rct = scrn_sfc.get_rect()
 
@@ -39,7 +39,7 @@ def main():
     tori_rct=tori_sfc.get_rect()
     tori_rct.center=900,400
 
-    tori_sfc2=pg.image.load("fig/stark.png")#stark make
+    tori_sfc2=pg.image.load("fig/stark.png")#スタークを作る
     tori_sfc2=pg.transform.rotozoom(tori_sfc2,0,0.12)
     tori_rct2=tori_sfc2.get_rect()
     tori_rct2.center=600,400
@@ -71,13 +71,13 @@ def main():
         if key_states[pg.K_DOWN]:  tori_rct.centery += 1
         if key_states[pg.K_LEFT]:  tori_rct.centerx -= 1
         if key_states[pg.K_RIGHT]: tori_rct.centerx += 1
-        yoko, tate = check_bound(tori_rct, scrn_rct)#鳥一匹目の操作
+        yoko, tate = check_bound(tori_rct, scrn_rct)#金髪の操作
 
         if key_states[pg.K_w]:    tori_rct2.centery -= 1
         if key_states[pg.K_s]:  tori_rct2.centery += 1
         if key_states[pg.K_a]:  tori_rct2.centerx -= 1
         if key_states[pg.K_d]: tori_rct2.centerx += 1
-        yoko2, tate2 = check_bound2(tori_rct2, scrn_rct)#鳥二匹目の操作
+        yoko2, tate2 = check_bound2(tori_rct2, scrn_rct)#茶髪の操作
 
         if yoko == -1:
             if key_states[pg.K_LEFT]: 
