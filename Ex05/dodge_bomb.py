@@ -80,7 +80,7 @@ class Bgm:Todo
 """
 #追加したかった機能
 
-class Deth:#死んだときのクラス
+class Death:#死んだときのクラス
     def __init__(self,file):
         pg.mixer.init() #初期化
         pg.mixer.music.load(file) #読み込み
@@ -139,8 +139,8 @@ def main():
 
         # 練習8
         if kkt.rct.colliderect(bkd.rct): # こうかとんrctが爆弾rctと重なったら
-            bgm.finish()
-            ds=Deth("mario5.mp3")
+            #bgm.finish()
+            ds=Death("mario5.mp3")
             ds.sound()
             return
 
