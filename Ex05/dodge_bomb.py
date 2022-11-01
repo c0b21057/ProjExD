@@ -65,18 +65,20 @@ class Bomb:
         self.vy *= tate
         self.blit(scr) # =scr.sfc.blit(self.sfc, self.rct)
 
-#class Bgm:Todo
- #   def __init__(self,file):
-  #      pg.mixer.init() #初期化
-   #     pg.mixer.music.load(file) 
+"""
+class Bgm:Todo
+    def __init__(self,file):
+        pg.mixer.init() #初期化
+        pg.mixer.music.load(file) 
 
-    #def start(self):
-     #   pg.mixer.music.play(1) #最初から
-      #  time.sleep(100)
+    def start(self):
+        pg.mixer.music.play(1) #最初から
+        time.sleep(100)
 
-    #def finish(self):#当たったらやめる
-     #   pg.mixer.music.stop()
-
+    def finish(self):#当たったらやめる
+         pg.mixer.music.stop()
+"""
+#追加したかった機能
 
 class Deth:#死んだときのクラス
     def __init__(self,file):
